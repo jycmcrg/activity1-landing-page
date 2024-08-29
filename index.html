@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACARAIG - Landing Page</title>
+    <!-- CSS -->
+    <style>
+        body, h1, h2, p, a, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*Body */
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            line-height: 1.6;
+            background-color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #00545c;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 50px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('homePic.jpg') no-repeat center center/cover;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.800);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 800px;
+            padding: 20px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background: #e94e77;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .cta-button:hover {
+            background: #d43f5f;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #B6D9E1;  
+            position: relative;
+            padding: 60px 50px;
+        }
+
+        .about-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 30px;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        .about p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .abouts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .about-card {
+            background-color: #B2EBF2;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 330px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .about-card:hover {
+            transform: scale(1.05);
+        }
+
+        .about-card figure {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .about-card figure {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .about-card img {
+            width: 100%;
+            height: 200px;
+            display: block;
+        }
+
+        .about-card p {
+            padding: 0 15px 15px;
+            color: #666;
+            font-size: 1em;
+        }
+
+        /* Footer */
+        footer {
+            background: #00545c;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #00eeff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">JYCMCRG</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to WebDev</h1>
+            <p>Dive into WebDev and unlock the magic of Information Technology—where every click, code, and creation brings 
+                the digital world to life. Get inspired and shape the future with us!</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>ABOUT</h2>
+            <p><b>Web development</b> is the process of creating, designing, and maintaining websites and web applications. It involves writing code and managing 
+                various aspects of a website's functionality, user experience, and overall performance.</p>
+            <br>
+            <h2>Why Web Development is Important?</h2>
+            <ul>
+                <li>Establishes an Online Presence</li>
+                <li>Enhances User Experience</li>
+                <li>Supports Business Growth</li>
+                <li>Ensures Security and Compliance</li>
+            </ul>
+            <br>
+            <h2>Key Components of Web Development</h2>
+            <div class="abouts">
+                <div class="about-card">
+                    <figure><img src="frontEnd.png" alt="Front-End Development"></figure>
+                    <h3>Front-End Development</h3>
+                    <p>This involves designing and coding the parts of a website that users interact with directly, including layout, visual elements, and user 
+                        experience (UX).</p>
+                    <p><b>Key Technologies: HTML, CSS, JavaScript, frameworks like React, Angular, or Vue.js.</b></p>
+                </div>
+                <div class="about-card">
+                    <figure><img src="backend.png" alt="Back-End Development"></figure>
+                    <h3>Back-End Development</h3>
+                    <p>This involves working on the server-side of web applications, handling databases, server logic, and application integration. </p>
+                    <p><b>Key Technologies: Server-side languages (e.g., Python, Ruby, PHP, Node.js), databases (e.g., MySQL, MongoDB), and frameworks 
+                        (e.g., Django, Ruby on Rails, Express.js).</b></p>
+                </div>
+                <div class="about-card">
+                    <figure><img src="fullStack.jpg" alt="Full Stack Development"></figure>
+                    <h3>Full Stack Development</h3>
+                    <p>A combination of both front-end and back-end development, full-stack developers have the skills to build entire web applications from 
+                        start to finish.</p>
+                    <p><b>Key Technologies: A combination of front-end and back-end technologies, depending on the project.</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 JYCMCRG | All rights reserved.</p>
+            <p>Contact us: <a href="mailto:joyce28macaraig@gmail.com">joyce28macaraig@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
